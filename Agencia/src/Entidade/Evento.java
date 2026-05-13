@@ -6,7 +6,23 @@ public class Evento {
 	private Local local;
 	private LocalDate data;
 	private TipoEvento tipoEvento;
+	private String nome;	
 	
+	
+	public Evento() {
+		super();
+    }
+	
+	
+	public Evento(Local local, LocalDate data, TipoEvento tipoEvento, String nome) {
+		super();
+		this.local = local;
+		this.data = data;
+		this.tipoEvento = tipoEvento;
+		this.nome = nome;
+	}
+
+
 	public Local getLocal() {
 		return local;
 	}
@@ -24,6 +40,16 @@ public class Evento {
 	}
 	public void setTipoEvento(TipoEvento tipoEvento) {
 		this.tipoEvento = tipoEvento;
+	}
+
+
+	public String getNome() {
+		return nome;
+	}
+
+
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 	
 }
